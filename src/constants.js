@@ -17,12 +17,18 @@ export const WEIGHTS = {
   bold: 800,
 };
 const BREAKPOINTS = {
-  phoneMax: 37.5,
-  tabletMax: 59.375,
-  laptopMax: 81.25,
+  phoneMax: 600,
+  tabletMax: 950,
+  laptopMax: 1300,
 }
 export const QUERIES = {
-  'phoneAndDown': `(max-width: ${BREAKPOINTS.phoneMax}rem)`,
-  'tabletAndDown': `(min-width: ${BREAKPOINTS.tabletMax}rem)`,
-  'laptopAndDown': `(min-width: ${BREAKPOINTS.laptopMax}rem)`,
+  'phoneAndDown': `(max-width: ${BREAKPOINTS.phoneMax / 16}rem)`,
+  'tabletAndDown': `(max-width: ${BREAKPOINTS.tabletMax / 16}rem)`,
+  'laptopAndDown': `(max-width: ${BREAKPOINTS.laptopMax / 16}rem)`,
+}
+export const THEME = {
+  QUERIES,
+  COLORS,
+  BREAKPOINTS,
+  WEIGHTS
 }
